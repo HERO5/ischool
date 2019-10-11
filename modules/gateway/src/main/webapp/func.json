@@ -1,0 +1,119 @@
+{
+  "root": {
+    "data": {
+      "id": "2b7e642f7eef",
+      "created": 1570262936,
+      "text": "活动室预约功能",
+      "expandState": "expand"
+    },
+    "children": [
+      {
+        "data": {
+          "id": "bxhg1v3hbxfk",
+          "created": 1570263773863,
+          "text": "获取邀请码",
+          "layout_mind_offset": {
+            "x": -8,
+            "y": -47
+          },
+          "expandState": "expand"
+        },
+        "children": []
+      },
+      {
+        "data": {
+          "id": "bxhgbakl9ji8",
+          "created": 1570264512827,
+          "text": "预约查询",
+          "layout_mind_offset": {
+            "x": 8,
+            "y": -38
+          },
+          "expandState": "expand"
+        },
+        "children": [
+          {
+            "data": {
+              "id": "bxhgfsosl6v4",
+              "created": 1570264865720,
+              "text": "查看全部已预约记录",
+              "note": "按时间表先后顺序显示已经成功预约的各个时间段和负责人姓名两条信息（两种权限显示的结果不一样）"
+            },
+            "children": []
+          },
+          {
+            "data": {
+              "id": "bxhggkb9x4ao",
+              "created": 1570264925852,
+              "text": "查看已预约记录的详情",
+              "note": "点击已被预约时间段列表中的某一条记录，查看此预约记录的全部申请信息。"
+            },
+            "children": []
+          }
+        ]
+      },
+      {
+        "data": {
+          "id": "bxhge2yb9se8",
+          "created": 1570264731335,
+          "text": "预约管理",
+          "expandState": "expand",
+          "layout": null
+        },
+        "children": [
+          {
+            "data": {
+              "id": "bxhgunulu77k",
+              "created": 1570266030650,
+              "text": "预约申请",
+              "note": "1.填写使用主题（ “主题“后显示灰色“必填，10个字之内“的字样）\n2.填写具体描述（后显示灰色“选填，100个字之内“）\n3.选择（不是手动填写）时间段起始（几月几日xx：xx）和结束时间（几月几日xx：xx）\n4.使用负责人姓名（5个文字）、\n5.电话（11个数字）\n6.微信号（20个文字大小）\n\n信息填写完毕，提交申请。",
+              "layout": null
+            },
+            "children": []
+          },
+          {
+            "data": {
+              "id": "bxhh9fg3agow",
+              "created": 1570267187821,
+              "text": "我的预约",
+              "note": "查看自己预约的结果。"
+            },
+            "children": []
+          },
+          {
+            "data": {
+              "id": "bxhgw1sxzbb4",
+              "created": 1570266139389,
+              "text": "取消申请",
+              "note": "取消申请即刻生效。",
+              "layout": null
+            },
+            "children": [
+              {
+                "data": {
+                  "id": "bxhha78j11j4",
+                  "created": 1570267248313,
+                  "text": "取消仍未成功的申请",
+                  "priority": 1
+                },
+                "children": []
+              },
+              {
+                "data": {
+                  "id": "bxhhayvspg5c",
+                  "created": 1570267308493,
+                  "text": "取消已成功的申请",
+                  "priority": 1
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "template": "structure",
+  "theme": "fresh-blue",
+  "version": "1.4.43"
+}

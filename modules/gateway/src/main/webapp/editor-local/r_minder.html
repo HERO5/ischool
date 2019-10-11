@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>KityMinder Example</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <link href="favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <link rel="stylesheet" href="bower_components/kityminder-core/src/kityminder.css" rel="stylesheet">
+
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        #minder-view {
+            position: absolute;
+            border: 1px solid #ccc;
+            left: 100px;
+            top: 100px;
+            bottom: 100px;
+            right: 100px;
+        }
+    </style>
+
+    <!--<script type="text/javascript" src="node_modules/kity/dist/kity.min.js"></script>-->
+    <script src="bower_components/kity/dist/kity.min.js"></script>
+</head>
+<body>
+<script id="minder-view" type="application/kityminder" minder-data-type="json">
+
+</script>
+
+<div id="minder-container"></div>
+<script type="text/javascript" src="bower_components/kityminder-core/dist/kityminder.core.min.js"></script>
+<script type="text/javascript">
+    var minder = new kityminder.Minder({
+        renderTo: '#minder-container'
+    });
+
+    function init_data() {
+        var json = {
+            "root": {
+                "data": {
+                    "id": "000000000000000001",
+                    "created": 1556365185034,
+                    "text": "Java 学习",
+                    "priority": 1,
+                    "progress": 1
+                },
+                "children": [{
+                    "data": {
+                        "id": "000000000000000002",
+                        "created": 1556365185044,
+                        "text": "语法",
+                        "priority": 2,
+                        "progress": 2
+                    },
+                    "children": [{
+                        "data": {
+                            "id": "000000000000000003",
+                            "created": 1556365185054,
+                            "text": "循环语句",
+                            "priority": 3,
+                            "progress": 3,
+                            "note": "while;for"
+                        }, "children": []
+                    }, {
+                        "data": {
+                            "id": "000000000000000004",
+                            "created": 1556365185064,
+                            "text": "选择语句",
+                            "priority": 3,
+                            "progress": 4,
+                            "note": "switch;if;else"
+                        }, "children": []
+                    }]
+                }, {
+                    "data": {
+                        "id": "000000000000000005",
+                        "created": 1556365185074,
+                        "text": "JVM",
+                        "priority": 2,
+                        "progress": 5,
+                        "note": "Java进阶学习"
+                    }, "children": []
+                }, {
+                    "data": {
+                        "id": "000000000000000006",
+                        "created": 1556365185084,
+                        "text": "框架",
+                        "priority": 2,
+                        "progress": 6,
+                    },
+                    "children": [{
+                        "data": {
+                            "id": "000000000000000007",
+                            "created": 1556365185094,
+                            "text": "Spring",
+                            "priority": 1,
+                            "progress": 7,
+                            "hyperlink": "https://spring.io"
+                        }, "children": []
+                    }, {
+                        "data": {
+                            "id": "000000000000000008",
+                            "created": 1556365185134,
+                            "text": "Hibernate",
+                            "priority": 2,
+                            "progress": 8,
+                        }, "children": []
+                    }, {
+                        "data": {
+                            "id": "000000000000000009",
+                            "created": 1556365185234,
+                            "text": "JFinal",
+                            "progress": 9,
+                            "priority": 2
+                        }, "children": []
+                    }, {
+                        "data": {
+                            "id": "000000000000000010",
+                            "created": 1556365185334,
+                            "text": "Struct",
+                            "priority": 2
+                        }, "children": []
+                    }]
+                }]
+            }, "template": "default", "theme": "fresh-blue", "version": "1.4.33"
+        };
+        document.getElementById("minder-view").textContent = JSON.stringify(json);
+        // var fileType = "json";
+        // var content = JSON.stringify(json);
+        // minder.importData(fileType, content).then(function(data){
+        //     console.log(data)
+        // });
+    }
+
+    init_data();
+    minder.setup('#minder-view');
+    minder.disable();
+    minder.execCommand('hand');
+    //更多接口和命令参考"https://github.com/fex-team/kityminder-core/wiki"
+
+</script>
+
+</body>
+
+<!--
+<script type="text/javascript" src="dist/kityminder.core.min.js"></script>
+<script type="text/javascript">
+    // 创建 km 实例
+    /* global kityminder */
+    var km = window.km = new kityminder.Minder();
+    km.setup('#minder-view');
+    km.disable();
+    km.execCommand('hand');
+</script>
+-->
+
+</html>

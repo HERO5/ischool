@@ -1,0 +1,61 @@
+{
+  "root": {
+    "data": {
+      "id": "btolevj7gd8g",
+      "created": 1556365185034,
+      "text": "java学习"
+    },
+    "children": [
+      {
+        "data": {
+          "id": "btolexhrc5c0",
+          "created": 1556365189300,
+          "text": "jdk",
+          "priority": 1,
+          "progress": 1
+        },
+        "children": []
+      },
+      {
+        "data": {
+          "id": "btolf96vzw1s",
+          "created": 1556365214764,
+          "text": "语法",
+          "priority": 2
+        },
+        "children": []
+      },
+      {
+        "data": {
+          "id": "btolfipg3t34",
+          "created": 1556365235478,
+          "text": "框架",
+          "priority": 1
+        },
+        "children": [
+          {
+            "data": {
+              "id": "btolfw6rjy80",
+              "created": 1556365264823,
+              "text": "hibernate",
+              "note":"这是备注"
+            },
+            "children": []
+          },
+          {
+            "data": {
+              "id": "btolg0g4z8jk",
+              "created": 1556365274097,
+              "text": "spring",
+              "hyperlink": "https://spring.io"
+            },
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "template": "default",
+  "theme": "fresh-blue",
+  "version": "1.4.33"
+}
