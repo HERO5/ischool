@@ -20,7 +20,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!-- 依赖库版本定义-->
         <ischool.version>1.0.0</ischool.version>
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.1</junit.version>
         <spring.version>4.2.5.RELEASE</spring.version>
         <hibernate.version>4.3.5.Final</hibernate.version>
         <hibernate.annotations.version>4.0.4.Final</hibernate.annotations.version>
